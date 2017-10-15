@@ -1,0 +1,88 @@
+	<link rel="stylesheet" href="style.css">
+	<script src="node_modules/factory/studentsFact.js"></script>
+		<script src="node_modules/controller/studentsCtrl.js"></script>
+
+	<!-- Modal -->
+		<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Modal title</h4> </div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group row">
+								<label for="Total Fees" class="col-sm-2 control-label">Total Fees</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" id="TotalFees" placeholder="Total Fees"> </div>
+							</div>
+							<div class="form-group row">
+								<label for="Total Fees" class="col-sm-2 control-label">Total Fees</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" id="TotalFees" placeholder="Total Fees"> </div>
+							</div>
+							<div class="form-group row">
+								<label for="Total Fees" class="col-sm-2 control-label">Total Fees</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" id="TotalFees" placeholder="Total Fees"> </div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	<div ng-controller="studentsCtrl">
+			<div class="admin">
+				<h2>Administration</h2> </div>
+			<div>
+				<ol class="breadcrumb">
+					<li><a href="#">Home</a></li>
+					<li class="active">Students</li>
+				</ol>
+			</div>
+			
+			<div id="data" class="container-fluid">
+			
+				<div class="row">
+					<div class="col-sm-10">
+					<div class="select">
+				<h3>Select student to update</h3>
+				<button class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal">Add Student <i class="fa fa-plus"></i></button>
+			</div>
+								<div class="clearfix"></div>
+
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Student's Name" aria-describedby="basic-addon2" ng-model="search"> <span class="input-group-addon" id="basic-addon2"><i class="fa fa-search"></i></span> </div>
+						<table id="university" class="table table-hover table-striped">
+							<tr>
+								<th>S.No.</th>
+								<th>University Name</th>
+								<th>Total Students</th>
+							</tr>
+							<tr data-toggle="modal" data-target="#myModal">
+								<td>1</td>
+								<td>BVCOE</td>
+								<td>10000</td>
+							</tr>
+							<tr data-toggle="modal" data-target="#myModal">
+								<td>2</td>
+								<td>MAIT</td>
+								<td>10000</td>
+							</tr>
+							<tr data-toggle="modal" data-target="#myModal">
+								<td>2</td>
+								<td>BPIT</td>
+								<td>10000</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="main.js"></script>

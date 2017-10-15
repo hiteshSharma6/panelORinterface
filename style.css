@@ -1,0 +1,51 @@
+body {
+	padding-top: 50px;
+}
+
+.admin {
+	background-color: cornflowerblue;
+	padding: 10px 50px;
+	color: white;
+	text-shadow: 0px 0px 5px yellow;
+/*	display: flex;*/
+	text-transform: uppercase;
+	margin: 0px;
+}
+
+/*
+#admin h3 {
+	padding-top: 5px;
+	padding-left: 20px;
+}*/
+
+.breadcrumb {
+	padding-left: 50px;
+}
+
+.select {
+/*	margin: 30px;*/
+/*	padding-bottom: 10px;*/
+}
+
+.select h3{
+	float: left;
+/*	margin: 0px;*/
+}
+
+.select button{
+	float: right;
+}
+
+#data {
+/*	margin-top: 50px;*/
+}
+
+.input-group {
+	width: 300px;
+	margin: 40px 0px 20px 20px;
+}
+
+#basic-addon2 {
+	cursor: pointer;
+}
+
